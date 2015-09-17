@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project 1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_detail">MovieDetailActivity</string>
+    <string name="action_sort_by_highest_rated">Sort By Highest Rated</string>
+    <string name="action_sort_by_most_popular">Sort By Most Popular</string>
+</resources>
