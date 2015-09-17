@@ -93,6 +93,7 @@ public class MovieListFragment extends Fragment {
 
     ArrayList<MovieItem> movies;
     MovieListAdapter movieItemArrayAdapter;
+    String API_KEY = "INSERT_YOUR_API_KEY_HERE";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstainceState) {
@@ -207,7 +208,7 @@ public class MovieListFragment extends Fragment {
         }
 
         try {
-            URL url = new URL("http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d45432122734ded51fb9af81eaea9d22");
+            URL url = new URL("http://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=" + API_KEY);
             new FetchMoviesTask().execute(url);
         } catch (Exception e) {
             System.out.println("Boohoo" + e);
